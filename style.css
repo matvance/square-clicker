@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  user-select: none;
+}
+
+#coins{
+  margin-left: 25px;
+}
+
+/* Grid */
+canvas#game{
+  float: left;
+}
+#upgrades{
+  width: calc(100vw - 700px);
+  height: 700px;
+  float: left;
+}
+#categories, #items{
+  width: 50%;
+  height: 700px;
+  float: left;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Upgrades list */
+#upgrades ul{
+  padding: 0;
+  margin: 0;
+}
+
+/* Upgrade items */
+#upgrades ul li{
+  display: block;
+  margin: 25px auto 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  height: 60px;
+  width: 80%;
+  padding: 0 20px;
+}
+#upgrades ul li .name{
+  display: block;
+  float: left;
+}
+#upgrades ul li .requirment{
+  text-align: right;
+  margin: 0;
+  float: right;
+  margin-top: 20px;
+}
